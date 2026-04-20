@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: coffeebliss-backend
+    runtime: python
+    pythonVersion: "3.12.7"
+    buildCommand: "pip install --only-binary=:all: -r requirements.txt"
+    startCommand: "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: PIP_ONLY_BINARY
+        value: ":all:"
