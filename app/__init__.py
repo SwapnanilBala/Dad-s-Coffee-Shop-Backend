@@ -1,1 +1,3 @@
-# CoffeeBliss FastAPI Backend
+"""
+Backend API removed. This file is now a placeholder.
+"""
